@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="icon" href="media/logo.jpg" type="image/png">
+    <title>Style Gamers Shop</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light shadow-sm  mb-1 bg-body roundedsticky-top">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <!--Logo-->
+              <a class="navbar-brand" href="index.html"><img src="media/logo.jpg" class="logo animate__animated animate__pulse" alt="Logo jostick"></a>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav navi px-2">
+                  <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                  <a class="nav-link" href="#">Sobre Nosotros</a>
+                  <a class="nav-link" href="#carro">Carrito de Compras</a>
+                  <a class="nav-link" href="#">FAQs</a>
+                  <a class="nav-link" href="#">Contacto</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <div class="container-fluid px-0">
+            <!--Banner-->
+            <div class="mt-2 mb-5">
+                <div>
+                    <img src="media/banner2.jpg" class="img-fluid" alt="banner-gaming">
+                </div>
+            </div>
+        </div>
+        <!--Titulo-->
+        <div class="container text-center my-5">
+          <h1 id="h1"><span>S</span><span>T</span><span>Y</span><span>L</span><span>E</span><span> </span><span>G</span><span>A</span><span>M</span><span>E</span><span>R</span><span>S</span><span> </span><span>S</span><span>H</span><span>O</span><span>P</span></h1>
+        </div>
+        <!--Contedor de Juegos-->
+        <div class="container">
+            <div id="contenedorJuegos" class="row"></div>
+        </div>
+        <!--Total Carrito-->
+        <div id="totalesCarrito" class="container">
+            <table class="table caption-top mb-5">
+              <h2>Total Carrito</h2>
+              <thead>
+                <tr">
+                  <th scope="col" class="text-center">Juego</th>
+                  <th scope="col" class="text-center">Cantidad</th>
+                  <th scope="col" class="text-center">Precio Unitario (IVA Incluido)</th>
+                  <th scope="col" class="text-center">Subtotal</th>
+                  <th scope="col" class="text-center">Eliminar Juego</th>
+                </tr>
+              </thead>
+              <tbody id="carro">
+                
+              </tbody>
+            </table>
+            <!--Formulario de Envío-->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Datos para el envío</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+              <form class="row g-3">
+                <div class="col-md-6">
+                  <label for="nombres" class="form-label">Nombres</label>
+                  <input type="text" class="form-control" id="nombres">
+                </div>
+                <div class="col-md-6">
+                  <label for="apellidos" class="form-label">Apellidos</label>
+                  <input type="text" class="form-control" id="apellidos">
+                </div>
+                <div class="col-md-5">
+                  <label for="email" class="form-label">Correo Electrónico</label>
+                  <input type="email" class="form-control" id="email">
+                </div>
+                <div class="col-md-4">
+                  <label for="telefono" class="form-label">Teléfono</label>
+                  <input type="tel" class="form-control" id="telefono">
+                </div>
+                <div class="col-md-3">
+                  <label for="tipoTel" class="form-label">Tipo de Teléfono</label>
+                  <select id="tipoTel" class="form-select">
+                    <option selected>Particular</option>
+                    <option selected>Celular</option>
+                    <option selected>...</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label for="domicilio" class="form-label">Domicilio</label>
+                  <input type="text" class="form-control" id="domicilio">
+                </div>
+                <div class="col-md-6">
+                  <label for="localidad" class="form-label">Localidad</label>
+                  <input type="text" class="form-control" id="localidad">
+                </div>
+                <div class="col-md-6">
+                  <label for="provincia" class="form-label">Provincia</label>
+                  <input type="text" class="form-control" id="provincia">
+                </div>
+                <div class="col-md-2">
+                  <label for="cp" class="form-label">Código Postal</label>
+                  <input type="number" class="form-control" id="cp">
+                </div>
+                <div class="col-md-4">
+                  <label for="horarioEntrega" class="form-label">Horario de Entrega</label>
+                  <select id="horarioEntrega" class="form-select">
+                    <option selected>9:00 HS a 14:00 HS</option>
+                    <option selected>14:00 HS a 18:00 HS</option>
+                    <option selected>9:00 HS a 18:00 HS</option>
+                    <option selected>...</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="infoMail">
+                    <label class="form-check-label" for="infoMail">
+                      Deseo recibir información del estado del pedido al correo electrónico informado
+                    </label>
+                  </div>
+                </div>
+              </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-primary" id="btnConfirmar">Confirmar Compra</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>       
+    </main>
+    <footer>
+      <div class="d-flex row bg-light py-3 flex-wrap">
+          <!--Redes-->
+          <div class="d-flex justify-content-center">
+            <a href="https://www.facebook.com/stylegamerssh0p" target="_blank"><img src="media/social-media/fb-icon.png" alt="facebook" class="icon social-fb"></a>
+            <a href="https://www.instagram.com/stylegamerssh0p" target="_blank"><img src="media/social-media/ig-icon.png" alt="instagram" class="icon social-ig"></a>
+            <a href="https://twitter.com/stylegamerssh0p" target="_blank"><img src="media/social-media/tw-icon.png" alt="twitter" class="icon social-tw"></a>
+            <a href="https://wa.me/591111111111" target="_blank"><img src="media/social-media/wp-icon.png" alt="whatsapp" class="icon social-wp"></a>
+            <a href="mailto:stylegamerssh0p@gmail.com" target="_blank"><img src="media/social-media/email-icon.png" alt="email" class="icon social-gmail"></a>
+            <a href="https://goo.gl/maps/3J7b8BGaue65Mf9e7" target="_blank"><img src="media/social-media/location-icon.png" alt="location" class="icon social-ubicacion"></a>
+          </div>
+          <!--Copyright-->
+          <div class="container pt-5">
+            <div class="small text-center text-muted">Copyright © 2022 - Style Gamers Shop SRL</div>
+          </div>
+      </div>    
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/formulario.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>    
+</body>
+</html>

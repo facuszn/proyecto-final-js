@@ -1,0 +1,57 @@
+[
+    {
+        "id": 1,
+        "nombre": "FIFA 22",
+        "precio": 12400,
+        "anio": "(2021)",
+        "imagen":"media/caratulas/ps5-fifa.jpg"
+    },
+    {
+        "id": 2, 
+        "nombre": "NBA 2K22", 
+        "precio": 11000, "anio": "(2021)", 
+        "imagen": "media/caratulas/ps5-nba2k22.jpg"
+    },
+    {
+        "id": 3, 
+        "nombre": "Gran Turismo 7", 
+        "precio": 7000, 
+        "anio": "(2021)", 
+        "imagen": "media/caratulas/ps5-gt.jpg"
+    },
+    {
+        "id": 4, 
+        "nombre": "Spider Man", 
+        "precio": 7500, 
+        "anio": "(2021)", 
+        "imagen": "media/caratulas/ps5-spider.jpg"
+    },
+    {
+        "id": 5, 
+        "nombre": "Mortal Kombat 11",
+        "precio": 8000, 
+        "anio": "(2020)", 
+        "imagen": "media/caratulas/ps5-mortalkombat.jpg"
+    },
+    {
+        "id": 6, 
+        "nombre": "Ghost Of Tsushima", 
+        "precio": 10000, 
+        "anio": "(2022)", 
+        "imagen": "media/caratulas/ps5-ghost.jpg"
+    },
+    {
+        "id": 7, 
+        "nombre": "Sniper Ghost Warrior 2", 
+        "precio": 10000, 
+        "anio": "(2022)", 
+        "imagen": "media/caratulas/ps5-sniper.jpg"
+    },
+    {
+        "id": 8, 
+        "nombre": "Death Stranding", 
+        "precio": 9000, 
+        "anio": "(2021)", 
+        "imagen": "media/caratulas/ps5-death.jpg"
+    }
+]
